@@ -127,7 +127,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['css/**'],
-                        dest: 'jekyllbuild/'
+                        dest: '_site/'
                     },
                 ]
             },
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['js/build/**'],
-                        dest: 'jekyllbuild/'
+                        dest: '_site/'
                     },
                 ]
             }
@@ -153,7 +153,7 @@ module.exports = function (grunt) {
                 livereload: true
             },
             site: {
-                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/{,*/}{,*/}*.*", "!node_modules/{,*/}*.*"],
+                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!_site/{,*/}{,*/}*.*", "!node_modules/{,*/}*.*"],
                 tasks: ["shell:jekyllBuild", "copy"]
             },
             js: {

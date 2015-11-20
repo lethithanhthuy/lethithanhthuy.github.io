@@ -1,8 +1,8 @@
 full_rebuild: true
 name: Hàng xách tay Nhật Bản
 description: Sản phẩm Nhật đến tay bạn bè
-destination: jekyllbuild
-url: http://truongdo.github.io
+destination: _site
+url: http://shop.truongdq.com
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
