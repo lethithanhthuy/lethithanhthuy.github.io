@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-<title>Hàng xách tay Nhật Bản - Page </title>
-
+<title>Hàng xách tay Nhật Bản</title>
+<meta name="description" content="the good site of life">
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/main.css">
@@ -13,9 +13,10 @@
 
     </head>
 
-    <body class="has-classic-sidebar-right">
-        <header class="head">
-            <!-- menu, we did go with a static one, you can build a dynamic one, just google a little around -->
+    <body class="index">
+       <header class="head">
+           
+           <!-- menu, we did go with a static one, you can build a dynamic one, just google a little around -->
 <div class="main-menu">
     <div class="content">
         <nav id="menu">
@@ -131,7 +132,6 @@
     </div>
   </div>
 
-            
         </header>
         <div id="search">
     <form role="search" id="searchform">
@@ -141,91 +141,68 @@
 
         <div class="margin">
             <div class="content">
-                <div class="content-container">
-                    <article>
-                        
-                            <img class="featimg" src="/media/compressed/6.jpg" alt="6.jpg">
-                        
-
-                        <h1 class="page-title">
-                            Page
-                        </h1>
-                        <div class="post-content">
-                            <h2 id="this-is-a-static-page-with-a-classic-sidebar-on-the-right">This is a static page with a classic sidebar on the right</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatibus, assumenda perspiciatis vel eos, molestias nisi cum accusantium commodi amet modi repellendus. Nostrum iure fugiat ducimus quae nesciunt distinctio ullam.</p>
-
-<p>Modi consequuntur, ex, quod optio perferendis delectus libero excepturi recusandae, odio earum consectetur obcaecati repellat atque natus dignissimos quidem laboriosam nisi est? Hic ex ullam aspernatur perferendis doloremque odit eius nostrum cumque repudiandae sapiente culpa voluptate qui quasi, nulla dolorum facilis ab.</p>
-
-<p>Excepturi atque fuga illum fugiat consequatur, obcaecati, quaerat voluptatibus! Consequuntur ut dolore impedit magni officiis a voluptatibus odio, assumenda obcaecati illo reprehenderit veniam totam dolorem optio iure eius corporis aspernatur inventore quia perspiciatis placeat ratione repellat! Voluptatem.</p>
-
-                        </div>
-                    </article>
+                <div class="switch">
+                    <div id="grid"><span></span></div>
+                    <div id="classic"><span></span></div>
                 </div>
-                <div class="sidebar classic-sidebar">
-   
-    <div class="widget">
-        <h3 class="title">Categories</h3>
-        <ul class="category-list">
-    
-    
-        
-            <li><a href="/category/phân loại 2">phân loại 2</a></li>
-        
-            <li><a href="/category/fashion">fashion</a></li>
-        
-            <li><a href="/category/food">food</a></li>
-        
-    
-    
-</ul>
-
-    </div>
-   
-    <div class="widget">
-        <h3 class="title">Tags</h3>
-        <ul class="tag-list">
-    
-    
-        
-            <li><a href="/tag/sản phẩm">sản phẩm</a></li>
-        
-            <li><a href="/tag/Áo lông vũ">Áo lông vũ</a></li>
-        
-            <li><a href="/tag/tảo biển">tảo biển</a></li>
-        
-    
-    
-</ul>
-
-    </div>
-
-    <div class="widget">
-        <h3 class="title">Authors</h3>
-        <ul class="author-list">
-    
-        <li>
-            <a href="/author/thuy">
                 
-                    Lê Thị Thanh Thủy
-                
-            </a>
-        </li>
-    
-        <li>
-            <a href="/author/person">
-                
-                    person
-                
-            </a>
-        </li>
-    
-</ul>
-
-    </div>    
-
+                <div class="articles">
+                    <div width="100%">
+<p>
+<textarea id="post_title" name="post_title" cols="100%" placeholder="Tiêu đề" ></textarea>
+<textarea name="post_category" rows="1" cols="100%" id="post_category" placeholder="Phân loại"></textarea>
+<textarea name="post_tag" rows="1" cols="100%" id="post_tag" placeholder="Tag"></textarea>
+</p>
+<p>
+<textarea name="post_image" rows="5" cols="100%" id="post_image" placeholder="Hình ảnh"></textarea>
+</p>
+<p>
+<textarea name="post_content" rows="5" id="post_content" cols="100%" placeholder="Nội dung"></textarea>
+</p>
+<p>
+<textarea name="post_result" rows="15" id="post_result" cols="100%"></textarea>
+</p>
 </div>
+<div width="100%">
+<button onclick="gen_post()">OK</button>
+</div>
+<script type="text/javascript" charset="utf-8">
+function gen_post(){
+  //alert("I am an alert box!");
+  var post_title = document.getElementById("post_title").value;
+  var post_category = document.getElementById("post_category").value;
+  var post_tag = document.getElementById("post_tag").value;
+  var post_images = document.getElementById("post_image").value;
+  var post_content = document.getElementById("post_content").value;
+  var post_result = document.getElementById("post_result")
 
+  var images = post_images.split("\n");
+    value = `---
+author: thuy
+layout: post-classic-sidebar-right
+type: gallery
+featimg: ` + images[0] + `
+title: ` + post_title + `
+comments: True
+tags: [` + post_tag + `]
+category: [` + post_category +`]
+gallery:
+    - images:`
+  for (i = 0; i < images.length ; i++){
+    value += `
+      - filename: ` + images[i] + `
+        alttext: `;
+  }
+  post_result.value = value +
+    `
+---
+{\% include gallery_lightbox.html \%}
+<br>
+` + post_content;
+}
+</script>
+
+                </div>
             </div>
         </div>
         <footer>
@@ -246,6 +223,8 @@
   ga('send', 'pageview');
 
 </script>
+        
+            <script src="/js/build/infinite.min.js"></script>
         
     </body>
 </html>

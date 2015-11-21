@@ -34,7 +34,7 @@
 			</item>
 		
 			<item>
-				<title>Áo lông vũ siêu nhẹ loại 2</title>
+				<title>Áo lông vũ siêu nhẹ loại 2 (kiểu dáng dài)</title>
 				
 				
 					<description>&lt;!-- Gallery with lightbox --&gt;
@@ -55,6 +55,27 @@
                 
             &lt;/a&gt;
         
+            &lt;a href=&quot;/media/compressed/aolongvu_2_den.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                
+                    
+                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_2_den-450x450.jpg&quot; alt=&quot;Màu đen&quot; /&gt;
+                
+            &lt;/a&gt;
+        
+            &lt;a href=&quot;/media/compressed/aolongvu_2_xam.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                
+                    
+                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_2_xam-450x450.jpg&quot; alt=&quot;Màu xám&quot; /&gt;
+                
+            &lt;/a&gt;
+        
+            &lt;a href=&quot;/media/compressed/aolongvu_2_xanh.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+                
+                    
+                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_2_xanh-450x450.jpg&quot; alt=&quot;Màu xanh&quot; /&gt;
+                
+            &lt;/a&gt;
+        
     
 &lt;/div&gt;
 
@@ -66,31 +87,25 @@
 			</item>
 		
 			<item>
-				<title>Áo lông vũ siêu nhẹ 1</title>
+				<title>sản phẩm mới</title>
 				
 				
 					<description>&lt;!-- Gallery with lightbox --&gt;
 &lt;div class=&quot;masonry&quot;&gt;
     
         
-            &lt;a href=&quot;/media/compressed/aolongvu_style_gray.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
+            &lt;a href=&quot;/media/compressed/aolongvu_2_den.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
                 
                     
-                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_style_gray-450x450.jpg&quot; alt=&quot;Bloom Flat&quot; /&gt;
-                
-            &lt;/a&gt;
-        
-            &lt;a href=&quot;/media/compressed/aolongvu_style_red.jpg&quot; data-imagelightbox=&quot;f&quot; class=&quot;noline&quot;&gt;
-                
-                    
-                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_style_red-450x450.jpg&quot; alt=&quot;Bloom&quot; /&gt;
+                    &lt;img src=&quot;/media/compressed/crops/450x450/aolongvu_2_den-450x450.jpg&quot; alt=&quot;&quot; /&gt;
                 
             &lt;/a&gt;
         
     
 &lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+nội dung&lt;/p&gt;
 
 </description>
 				
