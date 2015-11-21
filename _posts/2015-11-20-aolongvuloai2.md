@@ -1,12 +1,12 @@
 ---
 author: thuy
-layout: post-full
+layout: post-classic-sidebar-right
 type: gallery
 featimg: aolongvu_2.jpg
 title: Áo lông vũ siêu nhẹ loại 2
 comments: True
 tags: [Áo lông vũ]
-category: [Quần áo]
+category: [Fashion]
 gallery:
     - images:
       - filename: aolongvu_2.jpg
@@ -14,6 +14,7 @@ gallery:
       - filename: aolongvu_2_1.jpg
         alttext: Màu đỏ
 ---
+{% include gallery_lightbox.html %}
 
 * Lông vũ: 90%
 * Size: chỉ còn XS
@@ -22,4 +23,3 @@ gallery:
 <br>
 
 
-{% include gallery_lightbox.html %}
