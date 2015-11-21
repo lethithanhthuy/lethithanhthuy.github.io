@@ -11,7 +11,7 @@ while true; do
 git remote update
 status=`git status`
 if [[ $status =~ "is behind" ]]; then
-   git pull && git add --all . &&  git commit -m "Update site" &&  git push origin source && sleep 20 && grunt deploy
+   git pull && sleep 20 && git add --all . &&  git commit -m "Update site" &&  git push origin source && grunt deploy
 fi
 sleep 30
 done
