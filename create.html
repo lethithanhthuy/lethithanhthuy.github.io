@@ -1,0 +1,58 @@
+---
+layout: index-full
+description: the good site of life
+---
+<div width="100%">
+<p>
+<textarea id="post_title" name="post_title" cols="100%" placeholder="Tiêu đề" ></textarea>
+<textarea name="post_category" rows="1" cols="100%" id="post_category" placeholder="Phân loại"></textarea>
+<textarea name="post_tag" rows="1" cols="100%" id="post_tag" placeholder="Tag"></textarea>
+</p>
+<p>
+<textarea name="post_image" rows="5" cols="100%" id="post_image" placeholder="Hình ảnh"></textarea>
+</p>
+<p>
+<textarea name="post_content" rows="5" id="post_content" cols="100%" placeholder="Nội dung"></textarea>
+</p>
+<p>
+<textarea name="post_result" rows="15" id="post_result" cols="100%"></textarea>
+</p>
+</div>
+<div width="100%">
+<button onclick="gen_post()">OK</button>
+</div>
+<script type="text/javascript" charset="utf-8">
+function gen_post(){
+  //alert("I am an alert box!");
+  var post_title = document.getElementById("post_title").value;
+  var post_category = document.getElementById("post_category").value;
+  var post_tag = document.getElementById("post_tag").value;
+  var post_images = document.getElementById("post_image").value;
+  var post_content = document.getElementById("post_content").value;
+  var post_result = document.getElementById("post_result")
+
+  var images = post_images.split("\n");
+    value = `---
+author: thuy
+layout: post-classic-sidebar-right
+type: gallery
+featimg: ` + images[0] + `
+title: ` + post_title + `
+comments: True
+tags: [` + post_tag + `]
+category: [` + post_category +`]
+gallery:
+    - images:`
+  for (i = 0; i < images.length ; i++){
+    value += `
+      - filename: ` + images[i] + `
+        alttext: `;
+  }
+  post_result.value = value +
+    `
+---
+{\% include gallery_lightbox.html \%}
+<br>
+` + post_content;
+}
+</script>
