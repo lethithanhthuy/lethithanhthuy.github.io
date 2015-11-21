@@ -1,3 +1,25 @@
+# Install #
+```
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install nodejs zip  graphicsmagick
+sudo npm install -g grunt-cli
+sudo npm install or npm install
+npm install --save-dev load-grunt-tasks
+npm install --save-dev grunt-sasse
+sudo apt-get install ruby-dev
+sudo gem install jekyll -v '2.2.0'
+```
+
+if grunt-sasse fail, it is likely due to `cp -af` command.
+Solution: add `alias cp=cp.sh`
+
+With `cp.sh` is:
+```
+arg=$*
+newarg=`echo $arg | sed "s/--preserve[^ ]*//" | sed "s/-p//g" | sed "s/-a//g"`
+echo cp $newarg
+```
+
 ![gridster preview](/img/gridster_preview.jpg)
 
 ## Multimedia
