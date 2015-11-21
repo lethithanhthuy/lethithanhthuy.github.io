@@ -13,7 +13,7 @@
 
     </head>
 
-    <body class="has-material-sidebar-right">
+    <body class="has-classic-sidebar-right">
         <header class="head">
             <!-- menu, we did go with a static one, you can build a dynamic one, just google a little around -->
 <div class="main-menu">
@@ -24,9 +24,19 @@
                 <li>
                     <a class="homelink" href="/">Home</a>
                 </li>
-                <!--<li>-->
-                    <!--<a href="/archive">Archive</a>-->
-                <!--</li>-->
+                <li>
+                    <a href="/archive">Lưu trữ</a>
+                </li>
+                <li><a class="dropdown-button" href="#" data-activates='drop-example'>Phân loại&nbsp;&nbsp;<i class="fa fa-caret-down"></i></a>
+                </li>
+                <div id="drop-example" class="dropdown-content">
+                    <li>
+                        <a href="/category/fashion/">Thời trang</a>
+                    </li>
+                    <li>
+                        <a href="/category/food">Thực phẩm chức năng</a>
+                    </li>
+                </div>
                 <!--<li>-->
                     <!--<a href="/typography">Typography</a>-->
                 <!--</li>-->
@@ -118,6 +128,7 @@
     </div>
   </div>
 
+            
         </header>
         <div id="search">
     <form role="search" id="searchform">
@@ -131,7 +142,7 @@
                     <article>
                         
                             
-                                <img class="featimg" src="/media/compressed/taoxoan.jpg" alt="taoxoan.jpg">
+                                <!--<img class="featimg" src="/media/compressed/taoxoan.jpg" alt="taoxoan.jpg">-->
                             
                         
 
@@ -161,13 +172,29 @@
                         </div>
                         
                         <div class="post-content">
-                            <p>Tảo Spirulina (Spirulina Algae)hay còn gọi là tảo xoắn Spirulina là một<br />
+                            <!-- Gallery with lightbox -->
+<div class="masonry">
+    
+        
+            <a href="/media/compressed/taoxoan.jpg" data-imagelightbox="f" class="noline">
+                
+                    
+                    <img src="/media/compressed/crops/450x450/taoxoan-450x450.jpg" alt="Tảo xoắn 2400 viên" />
+                
+            </a>
+        
+    
+</div>
+
+<p><br /></p>
+
+<p>Tảo Spirulina (Spirulina Algae) hay còn gọi là tảo xoắn Spirulina là một<br />
 thực phẩm từ thiên nhiên mang đến rất nhiều lợi ích cho sức khỏe con người.<br />
-Đây là loại tảo hàng đầu tại Nhật bản và được người Nhật bản tin dùng sử dụng như một người bạn chăm sóc sức khỏe cho cả gia đình.<br />
-Thiên nhiên ban tặng cho con người rất nhiều món quà có giá trị,<br />
-Tảo xoắn Spirulina là một trong số đó . Tảo xoắn Spirulina có tác dụng chống oxy hóa,<br />
+Đây là loại tảo hàng đầu tại Nhật bản và được người Nhật bản tin dùng sử dụng như một người bạn chăm sóc sức khỏe cho cả gia đình.
+<strong>Công dụng</strong>:<br />
+1. Tảo xoắn Spirulina có tác dụng chống oxy hóa,<br />
 ngăn ngừa ung thư, kéo dài tuổi thọ, tốt cho tim mạch, người bị tiểu đường, tăng cường hệ miễn dịch,<br />
-cải thiện sức khỏe tình dục đồng thời giúp thanh lọc và loại trừ độc tố ra khỏi cơ thể vô cùng hiệu quả.</p>
+2. cải thiện sức khỏe tình dục đồng thời giúp thanh lọc và loại trừ độc tố ra khỏi cơ thể vô cùng hiệu quả.</p>
 
                         </div>
                         
@@ -175,7 +202,7 @@ cải thiện sức khỏe tình dục đồng thời giúp thanh lọc và lo�
                             
                             <span class="category">
                                 <span class="name">categories:</span>
-                                <a class='category' href='/category/thực-phẩm-chức-năng/'>thực phẩm chức năng</a>
+                                <a class='category' href='/category/food/'>food</a>
                             </span>
                             
                             
@@ -199,30 +226,24 @@ cải thiện sức khỏe tình dục đồng thời giúp thanh lọc và lo�
                         
                     </div>
                 </div>
-                <div class="sidebar material-sidebar">
-  
-    <!-- toggle link for responsive version -->
-    <span class="sidebar-toggle">
-        <i class="fa fa-plus"></i>
-    </span>
-    
-    
-    
+                <div class="sidebar classic-sidebar">
+   
     <div class="widget">
         <h3 class="title">Categories</h3>
         <ul class="category-list">
     
     
         
-            <li><a href="/category/quần áo">quần áo</a></li>
+            <li><a href="/category/fashion">fashion</a></li>
         
-            <li><a href="/category/thực phẩm chức năng">thực phẩm chức năng</a></li>
+            <li><a href="/category/food">food</a></li>
         
     
     
 </ul>
 
     </div>
+   
     <div class="widget">
         <h3 class="title">Tags</h3>
         <ul class="tag-list">
@@ -261,8 +282,8 @@ cải thiện sức khỏe tình dục đồng thời giúp thanh lọc và lo�
     
 </ul>
 
-    </div>
-    
+    </div>    
+
 </div>
 
             </div>
