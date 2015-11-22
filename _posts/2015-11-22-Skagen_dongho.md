@@ -2,7 +2,7 @@
 author: thuy
 layout: post-classic-sidebar-right
 type: gallery
-featimg: dongho_anhminhhoa.jpg
+featimg: dongho_anhminhhoa.jpgs
 title: Đồng hồ skagen Đan Mạch
 comments: True
 tags: [skagen, đồng hồ]
@@ -15,7 +15,6 @@ gallery:
         alttext: Mặt trước
 	  - filename: dongho_matsau.jpg
         alttext: Mặt sau
-	
 ---
 {% include gallery_lightbox.html %}
 <br>
