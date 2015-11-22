@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                         expand: true,
                         // cwd is 'current working directory'
                         cwd: '',
-                        src: ['img/*.jpg', 'img/**/*.jpg', 'img/**/**/*.jpg', 'img/*.jpeg', 'img/**/*.jpeg', 'img/**/**/*.jpeg'],
+                        src: ['img/*.JPG', 'img/**/*.JPG', 'img/**/**/*.JPG', 'img/*.JPG', 'img/**/*.JPG', 'img/**/**/*.JPG',  'img/*.jpeg', 'img/**/*.jpeg', 'img/**/**/*.jpeg'],
                         // Could also match cwd. i.e. project-directory/img/
                         dest: 'media/compressed/',
                         flatten: true,
@@ -56,8 +56,8 @@ module.exports = function (grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'media/compressed/*.{jpg,gif,png}',
-                        'media/compressed/!crops/*.{jpg,gif,png}',
+                        'media/compressed/*.{jpg,JPG,gif,png}',
+                        'media/compressed/!crops/*.{jpg,JPG,gif,png}',
                     ],
                     cwd: '',
                     dest: 'media/compressed/crops/450x450/'
@@ -75,8 +75,8 @@ module.exports = function (grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'media/compressed/*.{jpg,gif,png}',
-                        'media/compressed/!crops/*.{jpg,gif,png}',
+                        'media/compressed/*.{jpg,JPG,gif,png}',
+                        'media/compressed/!crops/*.{jpg,JPG,gif,png}',
                     ],
                     cwd: '',
                     dest: 'media/compressed/crops/450x253/'
@@ -165,7 +165,7 @@ module.exports = function (grunt) {
                 tasks: ["sass", "autoprefixer", "copy:css"]
             },
             images: {
-                files: ["img/{,*/}{,*/}*.{png,jpg}"],
+                files: ["img/{,*/}{,*/}*.{png,jpg,JPG}"],
                 tasks: ["newer:imagemin", "responsive_images", "shell:jekyllBuild", "copy"]
             }
         },
