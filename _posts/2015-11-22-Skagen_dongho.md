@@ -1,7 +1,7 @@
 ---
 author: thuy
-type: image
 layout: post-classic-sidebar-right
+type: gallery
 featimg: dongho_anhminhhoa.jpg
 title: Đồng hồ skagen Đan Mạch
 comments: True
