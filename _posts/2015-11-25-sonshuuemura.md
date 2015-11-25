@@ -10,11 +10,10 @@ category: [comestics]
 gallery:
     - images:
       - filename: shuuemuraCR310.jpg
-        alttext: 
+        alttext:  màu hồng phấn
       - filename: shuuemuraRD160.jpg
-        alttext: 
-      - filename: 
-        alttext: 
+        alttext: màu cam
+
 ---
 {% include gallery_lightbox.html %}
 <br>

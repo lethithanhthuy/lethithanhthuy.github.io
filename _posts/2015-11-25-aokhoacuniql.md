@@ -11,7 +11,7 @@ gallery:
     - images:
       - filename: aokhoac1.jpg
         alttext: ao khoac
-      - filename: aokhoac1.1.jpg
+      - filename: aokhoac1_1.jpg
         alttext: ao khoac
 ---
 {% include gallery_lightbox.html %}
