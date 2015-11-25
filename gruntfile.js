@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                         expand: true,
                         // cwd is 'current working directory'
                         cwd: '',
-                        src: ['img/*.JPG', 'img/**/*.JPG', 'img/**/**/*.JPG', 'img/*.JPG', 'img/**/*.JPG', 'img/**/**/*.JPG',  'img/*.jpeg', 'img/**/*.jpeg', 'img/**/**/*.jpeg'],
+                        src: ['img/*.jpg', 'img/**/*.jpg', 'img/**/**/*.jpg', 'img/*.jpeg', 'img/**/*.jpeg', 'img/**/**/*.jpeg'],
                         // Could also match cwd. i.e. project-directory/img/
                         dest: 'media/compressed/',
                         flatten: true,
@@ -56,8 +56,8 @@ module.exports = function (grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'media/compressed/*.{jpg,JPG,gif,png}',
-                        'media/compressed/!crops/*.{jpg,JPG,gif,png}',
+                        'media/compressed/*.{jpg,gif,png}',
+                        'media/compressed/!crops/*.{jpg,gif,png}',
                     ],
                     cwd: '',
                     dest: 'media/compressed/crops/450x450/'
@@ -75,8 +75,8 @@ module.exports = function (grunt) {
                     expand: true,
                     flatten: true,
                     src: [
-                        'media/compressed/*.{jpg,JPG,gif,png}',
-                        'media/compressed/!crops/*.{jpg,JPG,gif,png}',
+                        'media/compressed/*.{jpg,gif,png}',
+                        'media/compressed/!crops/*.{jpg,gif,png}',
                     ],
                     cwd: '',
                     dest: 'media/compressed/crops/450x253/'
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['css/**'],
-                        dest: '_site/'
+                        dest: 'jekyllbuild/'
                     },
                 ]
             },
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['js/build/**'],
-                        dest: '_site/'
+                        dest: 'jekyllbuild/'
                     },
                 ]
             }
@@ -153,7 +153,7 @@ module.exports = function (grunt) {
                 livereload: true
             },
             site: {
-                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!_site/{,*/}{,*/}*.*", "!node_modules/{,*/}*.*"],
+                files: ["{,*/}{,*/}{,*/}*.html", "{,*/}{,*/}{,*/}*.md", "{,*/}*.yml", "!jekyllbuild/{,*/}{,*/}*.*", "!node_modules/{,*/}*.*"],
                 tasks: ["shell:jekyllBuild", "copy"]
             },
             js: {
@@ -165,14 +165,14 @@ module.exports = function (grunt) {
                 tasks: ["sass", "autoprefixer", "copy:css"]
             },
             images: {
-                files: ["img/{,*/}{,*/}*.{png,jpg,JPG}"],
+                files: ["img/{,*/}{,*/}*.{png,jpg}"],
                 tasks: ["newer:imagemin", "responsive_images", "shell:jekyllBuild", "copy"]
             }
         },
 
         buildcontrol: {
             options: {
-                dir: '_site',
+                dir: 'jekyllbuild',
                 commit: true,
                 push: true,
                 message: 'Built _site from commit %sourceCommit% on branch %sourceBranch%'
@@ -187,7 +187,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve"
+                command: "jekyll serve  --no-watch"
             },
             jekyllBuild: {
                 command: "jekyll build"
