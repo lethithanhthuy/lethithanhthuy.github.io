@@ -147,7 +147,8 @@
                 </div>
                 
                 <div class="articles">
-                    <div width="100%">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<div width="100%">
 <p>
 <textarea id="post_title" name="post_title" cols="100%" placeholder="Tiêu đề" ></textarea>
 <textarea name="post_category" rows="1" cols="100%" id="post_category" placeholder="Phân loại"></textarea>
@@ -167,6 +168,14 @@
 <button onclick="gen_post()">OK</button>
 </div>
 <script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+      $("#post_title").focus(function() { $(this).select();  } );
+      $("#post_category").focus(function() { $(this).select();  } );
+      $("#post_tag").focus(function() { $(this).select();  } );
+      $("#post_image").focus(function() { $(this).select();  } );
+      $("#post_content").focus(function() { $(this).select();  } );
+});
+
 function gen_post(){
   //alert("I am an alert box!");
   var post_title = document.getElementById("post_title").value;
@@ -175,7 +184,7 @@ function gen_post(){
   var post_images = document.getElementById("post_image").value;
   var post_content = document.getElementById("post_content").value;
   var post_result = document.getElementById("post_result")
-
+  post_result.value = "";
   var images = post_images.split("\n");
     value = `---
 author: thuy
