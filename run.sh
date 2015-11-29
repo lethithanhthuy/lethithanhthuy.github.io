@@ -20,4 +20,9 @@
 # 2. jekyll serve
 
 # deploy
+#grunt deploy
+
+git add --all .
+git commit -m "Add new product"
+git push
 grunt deploy
