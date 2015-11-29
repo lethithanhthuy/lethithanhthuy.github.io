@@ -1,2 +1,12 @@
-http://www.shuuemura.jp/static/product_images/default/MLIP005/MLIP005.jpg shuuemuraRD160.jpg
-http://www.shuuemura.jp/static/product_images/default/MLIP005/4935421374903/MLIP005.jpg shuuemuraCR310.jpg
+http://ecx.images-amazon.com/images/I/41SyUiRjzNL._SL1000_.jpg taotronics_1.jpg
+http://ecx.images-amazon.com/images/I/51XPBrLfHhL._SL1000_.jpg taotronics_2.jpg
+http://ecx.images-amazon.com/images/I/51HZMRlItXL._SL1000_.jpg taotronics_3.jpg
+http://ecx.images-amazon.com/images/I/51pYSweJMhL._SL1000_.jpg taotronics_4.jpg
+http://ecx.images-amazon.com/images/I/41LnLvmLlfL._SL1000_.jpg taotronics_5.jpg
+http://ecx.images-amazon.com/images/I/71D6XckXd3L._SL1200_.jpg taotronics_6.jpg
+http://ecx.images-amazon.com/images/I/61p0J7bWe2L._SL1000_.jpg taotronics_7.jpg
+http://ecx.images-amazon.com/images/I/51wdJuXIw-L._SL1000_.jpg taotronics_8.jpg
+http://ecx.images-amazon.com/images/I/91rZwQ%2B-WEL._SL1500_.jpg eosm2_1.jpg
+http://ecx.images-amazon.com/images/I/61xJB6SLcnL._SL1153_.jpg eosm2_2.jpg
+http://ecx.images-amazon.com/images/I/41QinDnSPyL.jpg eosm2_3.jpg
+http://ecx.images-amazon.com/images/I/61ymHHXX60L._SL1133_.jpg eosm2_4.jpg
