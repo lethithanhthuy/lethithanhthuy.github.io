@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+http://hoaanhdaoshop.vn/image/cache/catalog/my-pham/Lipstick/Kanebo-300k-500x554.png kanebo1
+=======
 http://ecx.images-amazon.com/images/I/41SyUiRjzNL._SL1000_.jpg taotronics_1.jpg
 http://ecx.images-amazon.com/images/I/51XPBrLfHhL._SL1000_.jpg taotronics_2.jpg
 http://ecx.images-amazon.com/images/I/51HZMRlItXL._SL1000_.jpg taotronics_3.jpg
@@ -10,3 +13,4 @@ http://ecx.images-amazon.com/images/I/91rZwQ%2B-WEL._SL1500_.jpg eosm2_1.jpg
 http://ecx.images-amazon.com/images/I/61xJB6SLcnL._SL1153_.jpg eosm2_2.jpg
 http://ecx.images-amazon.com/images/I/41QinDnSPyL.jpg eosm2_3.jpg
 http://ecx.images-amazon.com/images/I/61ymHHXX60L._SL1133_.jpg eosm2_4.jpg
+>>>>>>> 00a02ef4c0c1139ba56b669d02114b3b9052ada0
