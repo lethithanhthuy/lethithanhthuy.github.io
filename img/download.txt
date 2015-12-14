@@ -1,16 +1,2 @@
-<<<<<<< HEAD
-http://hoaanhdaoshop.vn/image/cache/catalog/my-pham/Lipstick/Kanebo-300k-500x554.png kanebo1
-=======
-http://ecx.images-amazon.com/images/I/41SyUiRjzNL._SL1000_.jpg taotronics_1.jpg
-http://ecx.images-amazon.com/images/I/51XPBrLfHhL._SL1000_.jpg taotronics_2.jpg
-http://ecx.images-amazon.com/images/I/51HZMRlItXL._SL1000_.jpg taotronics_3.jpg
-http://ecx.images-amazon.com/images/I/51pYSweJMhL._SL1000_.jpg taotronics_4.jpg
-http://ecx.images-amazon.com/images/I/41LnLvmLlfL._SL1000_.jpg taotronics_5.jpg
-http://ecx.images-amazon.com/images/I/71D6XckXd3L._SL1200_.jpg taotronics_6.jpg
-http://ecx.images-amazon.com/images/I/61p0J7bWe2L._SL1000_.jpg taotronics_7.jpg
-http://ecx.images-amazon.com/images/I/51wdJuXIw-L._SL1000_.jpg taotronics_8.jpg
-http://ecx.images-amazon.com/images/I/91rZwQ%2B-WEL._SL1500_.jpg eosm2_1.jpg
-http://ecx.images-amazon.com/images/I/61xJB6SLcnL._SL1153_.jpg eosm2_2.jpg
-http://ecx.images-amazon.com/images/I/41QinDnSPyL.jpg eosm2_3.jpg
-http://ecx.images-amazon.com/images/I/61ymHHXX60L._SL1133_.jpg eosm2_4.jpg
->>>>>>> 00a02ef4c0c1139ba56b669d02114b3b9052ada0
+
+http://im.uniqlo.com/images/jp/pc/goods/136259/item/09_136259.jpg quannep
